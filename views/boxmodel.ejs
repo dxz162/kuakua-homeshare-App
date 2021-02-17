@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Page-Enter" content="blendTrans(Duration=0.5)" /> 
+　　<meta http-equiv="Page-Exit" content="blendTrans(Duration=0.5)" /> 
+
+    <title>homeshareApp</title>
+<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+<link rel = "stylesheet"
+href="bootstrap/bootstrap4/css/bootstrap.min.css">
+<link rel="stylesheet" href="fontawesome/font-awesome.min.css">
+<script src="jquery/jquery-3.5.1.min.js"></script>
+<script src="popper/popper.min.js"></script>
+<script src="bootstrap/bootstrap4/js/bootstrap.min.js"></script>
+</head>
+
+
+<body>
+   <!-----NavigationBar----> 
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" id = "nav-bar">
+      <div class="navbar-header">
+        <img id="logo" src="/source/kuakua.png"><!--临时logo-->
+        <a href="#" class="navbar-brand">夸夸组</a>
+      </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="nav navbar-nav ml-auto">
+          <li class="nav-item active"><a class="nav-link" onclick="window.location.hash = '#hero';" href="#"><!--onclick实现同一页面位置的跳转-->夸夸组主页</a></li>
+          <li class="nav-item"><!--onclick实现同一页面位置的跳转--><a class="nav-link" onclick="window.location.hash = '#about';">关于我们</a></li>
+          <li class="nav-item"><!--onclick实现同一页面位置的跳转--><a class="nav-link" onclick="window.location.hash = '#contact';">联系我们</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="nav-item"><a class="nav-link" href="/register">登录</a></li>
+          <li class="nav-item"><a class="nav-link" href="/login">注册</a></li>
+        </ul>
+          
+      </div>
+  </nav>
+
+
+
+        <!-- ======= Hero Section ======= -->
+   <section id="hero" class="d-flex flex-column justify-content-center">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-xl-8">
+        <h1> 我们不卖房，我们只是房子的搬运工 </h1>
+      </div>
+    </div>
+  </div>
+  </section>
+   <!-- End Hero -->
+
+   
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>关于夸夸组</h2>
+          <p>夸夸组是国内首家移动互联网房产多功能平台。作为迅速崛起的行业新生力量，夸夸组通过移动互联网工具，为开发商、经纪公司、买房卖房者搭建了一个高效的、可信赖的O2O房产交易平台，是一家坚持以真房源、真服务、真交易为平台战略的房产电商。作为中国居住服务领域以数据技术驱动的互联网开放平台的房多多，业务范围涉及新房、二手房、租房、增值服务等，与居住服务相关的多个领域</p>
+        </div>
+        <div class="row content">
+          <div class="col-lg-6">
+            <p id="paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua.
+            </p>
+            <ul>
+              <li><i id="paragraph" class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
+              <li><i id="paragraph" class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit</li>
+              <li><i id="paragraph" class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
+            </ul>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <p id="paragraph">
+              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+              culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <a href="#" class="btn-learn-more">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section><!-- End About Us Section -->
+
+  <!-- ======= Contact Section ======= -->
+  <section id="contact" class="contact">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>联系我们/Contact</h2>
+        <p>专业服务团队，致力于为您提供专业的房产咨询服务，及完善的房屋维护服务，助您云上无忧</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <img id="logo" src="/source/kuakua.png"><!--临时logo-->
+      <div class="row mt-5">
+
+        <div class="col-lg-12">
+          <div class="info">
+            <div class="address">
+              <i class="ri-map-pin-line"></i>
+              <h4>地址/Location:</h4>
+              <p>A108 Adam Street, New York, NY 535022</p>
+            </div>
+
+            <div class="email">
+              <i class="ri-mail-line"></i>
+              <h4>电子邮箱/Email:</h4>
+              <p>info@example.com</p>
+            </div>
+
+            <div class="phone">
+              <i class="ri-phone-line"></i>
+              <h4>联系电话/Tel:</h4>
+              <p>+1 5589 55488 55s</p>
+            </div>
+      </div>
+
+    </div>
+  </section><!-- End Contact Section -->
+
+</body>
+</html>

@@ -1,0 +1,104 @@
+<%- include("../partials/header") %>
+
+<body>
+
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-toggler" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="#" class="navbar-brand"><span class="glyphicon glyphicon-lock" aria-hidden="true"></span> 夸夸组</a>
+			</div>
+			<div class="collapse navbar-collapse" id="nav-toggler">
+				<ul class="nav navbar-nav">
+					<li><a href="/">主页</a></li>
+					<li><a href="#">联系我们</a></li>
+                </ul>
+                
+                <ul class="nav navbar-nav navbar-right">
+					<li><a href="/my">个人主页</a></li>
+				</ul>
+                <ul class="nav navbar-nav navbar-right">
+					<li><a href="/my/logout">登出</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	
+    <div class="container register-form">
+		<%- include('../partials/messages'); %>
+		<form>	
+            <div class="input-group">
+                <span class="input-group-addon" >邮箱</span>
+				<input type="email" 
+				class="form-control" 
+				value="<%= email %>" 
+				id="email" 
+				aria-describedby="email" 
+				readonly = "readonly">
+            </div>
+        
+            <div class="input-group">
+                <span class="input-group-addon" >姓名</span>
+				<input type="text" 
+				class="form-control" 
+				id="name"
+				aria-describedby="password" 
+				name="name"
+				value="<%= name %>" >
+			</div>
+			
+			<div class="input-group">
+                <span class="input-group-addon" >电话</span>
+				<input type="number" 
+				class="form-control" 
+				id="phone" 
+				aria-describedby="phone" 
+				name="phone"
+				value="<%= phone %>">
+			</div>
+
+			<div class="input-group">
+                <span class="input-group-addon" >年龄</span>
+				<input type="number" 
+				class="form-control" 
+				id="age" 
+				aria-describedby="age" 
+				name="age"
+				value="<%= age %>">
+			</div>
+
+			<div class="input-group">
+                <span class="input-group-addon" >性别</span>
+				<input type="text" 
+				class="form-control" 
+				id="sex" 
+				aria-describedby="sex" 
+				name="address"
+				value="<%= sex %>">
+			</div>
+			
+			<div class="input-group">
+                <span class="input-group-addon" >地址</span>
+				<input type="text" 
+				class="form-control" 
+				id="address" 
+				aria-describedby="address" 
+				name="address"
+				value="<%= address %>">
+			</div>
+
+            <div class="button">
+				<a href="/my/info2" class="btn btn-default btn-lg">修改个人信息</a>
+            </div>
+        </form>       
+    </div>
+
+	<script src="../jquery/jquery-3.5.1.min.js"></script>
+	<script src="../bootstrap/bootstrap3/js/bootstrap.min.js"></script>
+</body>
+<%- include("../partials/footer") %>

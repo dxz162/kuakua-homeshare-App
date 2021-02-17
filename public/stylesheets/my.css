@@ -1,0 +1,28 @@
+
+body {
+	padding-top: 70px;
+}
+
+.jumbotron {
+	color: white;
+	background-color:black;
+}
+
+.btn-lg {
+    
+    background-color: black;
+    color: white;
+    width: 100px;
+    margin: 30px 45%;
+    border-radius: 25%;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: white;
+}
+
+.navbar-inverse .navbar-brand {
+    color: white;
+}
+
+

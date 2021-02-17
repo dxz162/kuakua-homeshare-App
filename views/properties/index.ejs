@@ -1,0 +1,41 @@
+<%- include("../partials/header") %>
+
+<div class="container">
+	<header class="jumbotron">
+		<h1 class="display-4">Welcome to KK</h1>
+		<p class="lead">View our homes from all over the world</p>
+		<hr class="my-4" />
+		<a class="btn btn-primary btn-lg" href="/properties/new" role="button">Add a New Property</a>
+	</header>
+
+	<p>
+		This is the all property page
+	</p>
+	<div class="row" style="display: flex; flex-wrap: wrap;">
+		<!-- start of each property card -->
+		<% propertyList.forEach(function(property){ %>
+
+		<div class="col-lg-4 col-sm-6">
+			<div class="card mb-3" style="width: 18rem;">
+				<img
+					src="<%= property.image  %>"
+					class="card-img-top"
+					alt="..."
+				/>
+				<div class="card-body">
+					<h5 class="card-title">
+						<%= property.propertyName %>'s
+					</h5>
+					<p class="card-text">
+						<%= property.description %>
+					</p>
+					<a href="/properties/<%= property._id  %>" class="btn btn-primary">Detail</a>
+				</div>
+			</div>
+		</div>
+		<% }); %>
+		<!-- end of each property card -->
+	</div>
+</div>
+
+<%- include("../partials/footer") %>

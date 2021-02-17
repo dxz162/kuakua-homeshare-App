@@ -1,0 +1,180 @@
+*
+{
+    margin:0;
+    padding:0;
+}
+/***********************navbar part**************************/
+#logo {/*临时logo*/
+  height: 30px;
+  width: 30px;
+  margin-right: 5px
+}
+
+#nav-bar
+{
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index: 9999;
+    font-family: 黑体;
+}
+
+.navbar-nav a{
+  float:right;
+  text-align: left;
+}
+
+#nav-bar ul li a:hover{
+    color: #009933!important;
+}
+
+.navbar-toggler{
+    border:none!important;
+}
+
+.nav-link
+{
+    color: #555!important;
+    font-weight: 600;
+}
+
+/***********************intro part**************************/
+#hero {
+    width: 100%;
+    height: 100vh;
+    background: /*此处可插入背景link*/  top center;
+    background-size: cover;
+    position: relative;
+  }
+  #hero:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  #hero .container {
+    padding-top: 72px;
+    position: relative;
+    text-align: center;
+  }
+  
+  #hero h1 {
+    margin: 0 0 10px 0;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 35px;
+    color: #fff;
+  }
+  
+ 
+/*--------------------------------------------------------------
+# About Us
+--------------------------------------------------------------*/
+.about .content h3 {
+  font-weight: 600;
+  font-size: 26px;
+}
+  
+.about .content ul {
+  list-style: none;
+  padding: 0;
+}
+  
+.about .content ul li {
+  padding-left: 28px;
+  position: relative;
+}
+  
+.about .content ul li + li {
+  margin-top: 10px;
+}
+  
+.about .content ul i {
+  position: absolute;
+  left: 0;
+  top: 2px;
+  font-size: 20px;
+  color: #009961;
+  line-height: 1;
+}
+  
+.about .content p:last-child {
+  margin-bottom: 0;
+}
+  
+.about .content .btn-learn-more {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 32px;
+  border-radius: 50px;
+  transition: 0.3s;
+  line-height: 1;
+  color: #009961;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+  margin-top: 6px;
+  border: 2px solid #009961;
+}
+  
+.about .content .btn-learn-more:hover {
+  background: #009961;
+  color: #fff;
+  text-decoration: none;
+}
+
+#about .container {
+  padding-top: 72px;
+  position: relative;
+  text-align: center;
+}
+  
+#about {
+  width: 100%;
+  height: 100vh;
+  background: /*此处可插入背景link*/ top center;
+  background-size: cover;
+  position: relative;
+  font-family: 华文中宋;/*不知道华文中宋在iOS系统的占有率怎么样？Windows系统都有*/
+}
+
+#about h2{/*调整了一下标题和下面文字的距离*/
+  margin-bottom: 40px;
+}
+
+#paragraph {/*两大段文字改为两端对齐，id：paragraph*/
+  text-align-last:justify;
+  text-align:justify;
+  text-justify:distribute-all-lines;
+}
+
+/***********************contact-info part**************************/
+#contact .container {
+  padding-top: 72px;
+  position: relative;
+  text-align: center;
+}
+
+.contact .content ul i {
+  position: absolute;
+  left: 0;
+  top: 2px;
+  font-size: 20px;
+  color: #009961;
+  line-height: 1;
+ }
+
+#contact {
+  width: 100%;
+  height: 100vh;
+  background: #6697CC top center;
+  background-size: cover;
+  position: relative;
+  font-family: 华文中宋;/*不知道华文中宋在iOS系统的占有率怎么样？Windows系统都有*/
+}
